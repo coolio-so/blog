@@ -1,6 +1,4 @@
 # DoS(Denial of Service) Attack
-
-# DoS(Denial of Service) Attack
 공격자의 컴퓨터로부터 표적 시스템과 그 시스템에 속한 네트워크에 과다한 데이터를 보냄으로써 대역폭, 프로세스, 처리능력, 기타 시스템 자원을 고갈시킴으로써 정상적인 서비스를 할 수 없도록 하는 행위
 
 ## Dos 공격형태
