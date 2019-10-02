@@ -25,9 +25,7 @@
 서비스 방해공격의 한 종류로 UDP 프로토콜을 이용하여 클라이언트가 서버에 가상의 데이터를 연속적으로 보내어 서버의 부하 및 네트워크 오버로드를 발생시켜 정상적인 서비스를 하지 못하도록 하는 공격
 
 ### Teardrop Attack(IP Fragmentation - Ping of Death)
-네트워크 패킷은 `MTU(Maximum Transmission Unit)` 보다 큰 패킷이 오면 분할(Fragmentation)하고 분할 된 정보를 `flags`와 `offset`이 가지고 있다. 이 때 `offset`을 임의로 조작하여 다시 조립할 수 없도록 하는 공격으로 `Fragment`를 조작하여 패킷 필터링 장비나 IDS를 우회하여 서비스 거부를 유발시킨다.  
-이 공격수법은 헤더가 조작된 일련의 IP 패킷조각(`IP Fragments`)들을 전송함으로써 공격이 이루어진다.  
-이 수법으로 공격당한 시스템은 네트워크 연결이 끊어지거나 일명 "죽음의 푸른 화면(`Blue Screen of Death`)"이라 불리는 오류 화면을 표시하면서 중단된다.
+네트워크 패킷은 `MTU(Maximum Transmission Unit)` 보다 큰 패킷이 오면 분할(Fragmentation)하고 분할 된 정보를 `flags`와 `offset`이 가지고 있다. 이 때 `offset`을 임의로 조작하여 다시 조립할 수 없도록 하는 공격으로 `Fragment`를 조작하여 패킷 필터링 장비나 IDS를 우회하여 서비스 거부를 유발시킨다. 이 공격수법은 헤더가 조작된 일련의 IP 패킷조각(`IP Fragments`)들을 전송함으로써 공격이 이루어진다. 이 수법으로 공격당한 시스템은 네트워크 연결이 끊어지거나 일명 "죽음의 푸른 화면(`Blue Screen of Death`)"이라 불리는 오류 화면을 표시하면서 중단된다.
 
 #### Ping of Death
 `ping`을 이용하여 `ICMP` 패킷을 규정된 길이 이상으로 큰 IP 패킷을 전송하여 수신 받은 OS에서 처리하지 못함으로써 시스템을 마비시키는 공격
