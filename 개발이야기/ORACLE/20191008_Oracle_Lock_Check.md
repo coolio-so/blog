@@ -26,6 +26,7 @@ WHERE B.TYPE  = 'TM'
 ### 3. 락 발생 사용자 및 OBJECT 조회 + 어떤 SQL를 실행중인지 확인
 
 > Lock을 해제하기전에 Lock을 유발시킨 SQL이 어떤것인지를 확인하여 실행되고 있는지 아니면 정말로 Lock 인지를 확인해야 함.
+
 ```sql
 SELECT DISTINCT T1.SESSION_ID
      , T2.SERIAL#
