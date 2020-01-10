@@ -47,7 +47,7 @@ $ ppm-admin config --client-name {Client Name} --server {Host IP or URL} --clien
 ```
 설정이 완료되면 모니터링하고자 하는 서비스를 등록 한다.
 
-#### Linux만 등록 할 때
+#### `Linux`만 등록 할 때
 ```
 $ ppm-admin add linux:metrics
 ```
