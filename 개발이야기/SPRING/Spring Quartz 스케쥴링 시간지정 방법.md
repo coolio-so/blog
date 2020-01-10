@@ -1,5 +1,5 @@
 # SpringQuartz 스케쥴링 시간지정 방법
-> `SpringQuartz`는 
+> `SpringQuartz`는 `Spring Framework`안에서 `@Scheduled` 어노테이션을 통해서 `Quartz`에서 제공하는 `cron schedule` 기능을 활용하게 해주는 라이브러리.
 
 ## 시간지정 구조
 ```
